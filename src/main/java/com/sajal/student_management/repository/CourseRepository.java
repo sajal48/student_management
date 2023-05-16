@@ -1,4 +1,9 @@
 package com.sajal.student_management.repository;
 
-public interface CourseRepository extends org.springframework.data.jpa.repository.JpaRepository<com.sajal.student_management.model.Course, java.lang.String> {
+import com.sajal.student_management.model.Course;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CourseRepository extends JpaRepository<Course, String> {
 }

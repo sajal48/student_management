@@ -1,4 +1,10 @@
 package com.sajal.student_management.repository;
 
-public interface StudentRepository extends org.springframework.data.jpa.repository.JpaRepository<com.sajal.student_management.model.Student, java.util.UUID> {
+import com.sajal.student_management.model.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.UUID;
+@Repository
+public interface StudentRepository extends JpaRepository<Student, UUID> {
 }
